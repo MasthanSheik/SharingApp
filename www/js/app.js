@@ -20,7 +20,7 @@ var ionicApp= angular.module('starter', ['ionic', 'ngCordova'])
 ionicApp.controller("ExampleController", function($scope, $cordovaSocialSharing) {
  
     $scope.shareAnywhere = function() {
-        $cordovaSocialSharing.share("Osmosys", "Osmosys webstation", "img/osm.png", "webstation.osmosystems.com");
+        $cordovaSocialSharing.share("some message", 'some message', null, 'http://blog.nraboy.com');
     }
  
     $scope.shareViaTwitter = function(message, image, link) {
